@@ -247,7 +247,7 @@ func parseMessageDefinition(rosPkgName string, name string, content string) (*me
 			res.Imports["time"] = struct{}{}
 
 		default:
-			res.Imports["github.com/SevenRobotics/goroslib/v2/pkg/msgs/"+f.TypePkg] = struct{}{}
+			res.Imports["go_agent/telemetry/gengo/ros/"+f.TypePkg] = struct{}{}
 		}
 	}
 
